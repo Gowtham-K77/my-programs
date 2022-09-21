@@ -1,0 +1,16 @@
+n=int(input(""))
+lst=[]
+lst2=[]
+c=n-1
+for i in range(0,n):
+    a=int(input(""))
+    lst.append(a)
+for j in lst:
+    v=lst.index(j)
+    if(v==c ):
+        lst2.insert(0,j)
+    elif(v!=c):
+        lst2.append(j)
+    elif(v==0):
+        lst2.append(c,j)
+print(lst2)
